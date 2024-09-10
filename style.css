@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Protest+Guerrilla&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Protest+Guerrilla&display=swap');
+
+/* #181918 */
+* {
+    box-sizing: border-box;
+}
+* {
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+  }
+body{
+    padding-top: 30px;
+    background-color: #101011;
+    font-family: "Source Code Pro", monospace;
+    font-optical-sizing: auto;
+    font-style: normal;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    color: white;
+}
+
+/* NAVBAR */
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 25px;
+    padding-right: 25px;
+    
+    background-color: #181918;
+    width: 80%;
+    border-radius: 5px;
+}
+.nav a {
+    text-decoration: none;
+    font-size: 20px;
+    color: #626462;
+}
+.nav a h1{
+    font-size: 20px;
+    color: #626462;
+    font-family: "Lato", sans-serif;
+    font-weight: 1000;
+    font-style: bold;
+}
+.nav a img{
+    width: 50px;
+    height: 50px;
+}
+
+/* APP */
+.app{
+    margin-top: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap:50px
+}
+.glavni{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    height: 160px;
+    overflow-y: auto;
+    overflow: hidden;
+    animation: fadeIn 1s;
+}
+.glavni .red{
+    display:flex;
+    font-size: 20px;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+}
+.glavni .aktivna-rec{
+    padding: 0 10px 0 10px;
+    font-size: 36px;
+    color: white;
+}
+.glavni .losa-rec{
+    padding: 0 10px 0 10px;
+    font-size: 36px;
+    color: #d26666;
+}
+.glavni .rec{
+    padding: 0 10px 0 10px;
+    font-size: 36px;
+    color: #363836;
+}
+.unos input{
+    width: 600px;
+    height: 50px;
+    font-size: 30px;
+    font-family: "Source Code Pro", monospace;
+    font-optical-sizing: auto;
+    font-style: normal;
+    border: none;
+    background-color: #101011;
+    color: white;
+    border-radius: 5px;
+    padding: 5px;
+    text-align:center;
+    outline: none;
+
+}
+/* RES */
+.rezultati{
+    margin-top: 150px;
+    width: 100%;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5px;
+    font-size: 25px;
+    color: #363836;
+    animation: fadeIn 1s;
+}
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+/* FUTER */
+.footer{
+    position: absolute;
+    bottom: 50px;
+    color: #626462;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 5px;
+}
+.footer a{
+    text-decoration: none;
+    color: #626462;
+    font-size: 1.1em;
+}
